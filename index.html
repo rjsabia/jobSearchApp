@@ -1,57 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
 	<title>jobSearchApp</title>
-
 	<link rel="stylesheet" href="styles/main.css">
-
 	<link rel="stylesheet" href="styles/reset.css">
-
-	
-                                    
 </head>
-
 <body>
 
-	<header id="page-head">
-		
-		<h1>testing testing header</h1>
-	</header>
-
+<header id="page-head">
+	<h1>testing testing header</h1>
+</header>
+	
 	<form id="input-form">
-		
-			<input type="text" id="search-data" placeholder="Please enter job title...">
-			<input type="text" id="search-location" placeholder="Please enter city, state...">
-			<button type="submit" id="search-button">Search</button>
+		<input type="text" id="job-title" placeholder="Please enter job title...">
+		<input type="text" id="search-location" placeholder="Please enter city, state...">
+		<button type="submit" id="search-button">Search</button>
 	</form>
-
+	
 	<section id="main-section">
-		
 		<div id="output-container">
-
-
-			<div id="search-results">
-				
-			</div>	
-
+			<ul id="output-list"></ul>
 		</div>
-
 	</section>
 
-	
 	<footer id="bottom-page">
-		
 		<p>testing testing footer</p>
 	</footer>
 
-
-
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-<script type="text/javascript" src="js/app.js">
-</script>
+<script type="text/javascript" src="js/app.js"></script>
 
 </body>
-
 </html>
