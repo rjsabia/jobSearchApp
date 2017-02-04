@@ -19,7 +19,8 @@ var getJobs = function(job_title,loc) {
   var request = { 
     description: job_title,
     location: loc,
-    full_time: true
+    full_time: true,
+    markdown: true
   };
   $.ajax({
     url: "http://jobs.github.com/positions.json?",
@@ -40,7 +41,10 @@ var getJobs = function(job_title,loc) {
 }
 function outputJobs (comp){
   // $('#output-list').append('<li>'+comp.company+'</li>');
-  $('#output-list').append('<li><ul><li>'+'<img src="'+comp.company_logo+'">'+'</li><li>'+comp.company_url+'</li><li>'+comp.description+'</li><li>'+comp.title+'</li><li>'+comp.location+'</li><li>'+comp.how_to_apply+'</li></ul></li>');
+  $('#output-list').append('<li><ul><li>'+'<img src="'
+    +comp.company_logo+'"width="350" height="100"/>'+'</li><li>'
+    +comp.company_url+'</li><li>'+comp.title+'</li><li>'+comp.location+
+    '<li>'+comp.description+'</li></li></ul></li>');
 }
 // **********END OF PROGRAM*********************************
 // *********************************************************
