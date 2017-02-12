@@ -2,6 +2,27 @@
 	box-sizing: border-box;
 	font-family: 'Roboto Mono', monospace;
 }
-body{
+#page-head h1{
+	font-family: 'Roboto Mono', monospace;
+}
+#page-head{
+	padding: 25px;
+}
+input{
+	width: 200px;
+	padding: 5px;
+	border-radius: 3px;
+}
+header{
 
+}
+#search-button{
+	margin-left: 5px;
+}
+#job-title{
+	margin: 0px 5px 0px 25px;
+}
+
+#bottom-page{
+	margin: 5px 0px 5px 25px;
 }
