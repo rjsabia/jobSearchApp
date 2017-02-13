@@ -8,28 +8,36 @@
 </head>
 <body>
 
-<header id="page-head">
-	<h1>Bit Target Search</h1>
-</header>
-	
-	<form id="input-form">
-		<input type="text" id="job-title" placeholder="Please enter job title...">
-		<input type="text" id="search-location" placeholder="Please enter city, state...">
-		<button type="submit" id="search-button">Search</button>
-	</form>
-	
-	<section id="main-section">
-		<div id="output-container">
-			<ul id="output-list"></ul>
+	<header id="page-head">
+		<div id="title">
+			<h1>Bit Target Job Search:<span id="blinky">/</span></h1>
 		</div>
-	</section>
+	</header>
+	
+	<div id="outer-main">
+		<div id="intro">
+			<h3>The developer only job search app, that targets postings from coder sites</h3>
+		</div>
+		
+		<form id="input-form">
+			<input type="text" id="job-title" placeholder="Please enter job title...">
+			<input type="text" id="search-location" placeholder="Please enter city, state...">
+			<button type="submit" id="search-button">Search</button>
+		</form>
+		
+		<section id="main-section">
+			<div id="output-container">
+				<ul id="output-list"></ul>
+			</div>
+		</section>
+	</div>
 
-	<footer id="bottom-page">
-		<p>testing testing footer</p>
-	</footer>
+	<!-- <footer id="footer">
+		<p>Bit Target Job Search does not own search content provided. Content search results are provided by Github Jobs.</p>
+	</footer> -->
 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 
 </body>
 </html>
