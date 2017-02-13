@@ -92,6 +92,21 @@ button{
 #job-title{
 	margin: 0px 10px 0px 25px;
 }
+#output-list{
+	margin: 30px 0px 0px 25px;
+	max-width: 500px
+}
+li #each-li{
+	margin: 5px 0px 5px 0px;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: bold;
+	font-size: 16px;
+}
+#url{
+	margin-bottom: 35px;
+	font-family: 'Roboto Mono', monospace;
+	color: #00FF23;
+}
 /*#main-section{
 	position: absolute;
 	padding: 100px;

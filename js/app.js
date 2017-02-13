@@ -41,14 +41,14 @@ function outputJobs (comp){
     // company url link anchor tied to clickable company logo
     +comp.company_url+'"target="_blank"><img src="'+comp.company_logo+'"alt="'
     // alternate output if company logo not available
-    +comp.company+'"width="200" height="75"/></a>'+'</li><li id="each-li">'
+    +comp.company+'"width="350" height="120"/></a>'+'</li><li id="each-li">'
     // output job type i.e. FT/PT/Other, output title is the job listing title
     +comp.type+'</li><li id="each-li">'+comp.title+'</li><li id="each-li">'
     // location outputs the city and or state job is located, created_at is date of post
     +comp.location+'</li><li id="each-li">'+'<p>'+"Job Posted On: "+comp.created_at+
     '</li><li id="each-li">'+'<p>'+ "How to apply: "
     // how to apply lists company instruction, url is link to Github job posting
-    +comp.how_to_apply+'</p></li><li><a href="'+comp.url+'"target="_blank">'
+    +comp.how_to_apply+'</p></li><li id="url"><a href="'+comp.url+'"target="_blank">'
     +"Link to Job Post and Description"+'</a></li></li></ul></li>');
 }
 // **********END OF PROGRAM*********************************
