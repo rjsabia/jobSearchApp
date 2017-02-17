@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>jobSearchApp</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="styles/main.css">
 	<link rel="stylesheet" href="styles/reset.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
@@ -12,13 +13,15 @@
 		<div id="title">
 			<h1>Bit Target Job Search:<span id="blinky">/</span></h1>
 		</div>
-	</header>
-	
-	<div id="outer-main">
+		<div id="blink-hash">
+			<p id="hash-blinker">#################################</p>
+		</div>
 		<div id="intro">
 			<h3>The developer only job search app, that targets postings from coder sites</h3>
 		</div>
-		
+	</header>
+	
+	<div id="outer-main">
 		<form id="input-form">
 			<input type="text" id="job-title" placeholder="Please enter job title...">
 			<input type="text" id="search-location" placeholder="Please enter city, state...">

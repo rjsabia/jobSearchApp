@@ -37,11 +37,11 @@ var getJobs = function(job_title,loc) {
  });
 }
 function outputJobs (comp){
-  $('#output-list').append('<li id="results-li"><ul><li id="each-li"><a href="'
+  $('#output-list').append('<li><ul id="results-ul"><li id="each-li"><a href="'
     // company url link anchor tied to clickable company logo
     +comp.company_url+'"target="_blank"><img src="'+comp.company_logo+'"alt="'
     // alternate output if company logo not available
-    +comp.company+'"width="350" height="120"/></a>'+'</li><li id="each-li">'
+    +comp.company+'"width="350" height="120" id="img"/></a>'+'</li><li id="each-li">'
     // output job type i.e. FT/PT/Other, output title is the job listing title
     +comp.type+'</li><li id="each-li">'+comp.title+'</li><li id="each-li">'
     // location outputs the city and or state job is located, created_at is date of post
