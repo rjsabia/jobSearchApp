@@ -21,7 +21,7 @@ var getJobs = function(job_title,loc) {
     markdown: true
   };
   $.ajax({
-    url: "http://jobs.github.com/positions.json?",
+    url: "https://jobs.github.com/positions.json?",
     data: request,
     dataType: "jsonp",//use jsonp to avoid cross origin issues
     type: "GET"
