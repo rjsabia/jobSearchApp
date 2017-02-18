@@ -135,6 +135,67 @@ button{
 @keyframes blinker-hash {  
   100% { opacity: 0.8; }
 }
+#explain{
+	margin: 0px auto 100px auto;
+	text-align: center;
+	font-family: 'Roboto Mono', monospace;
+}
+#pic, #story{
+	display: inline-block;
+	width: 40%;
+	padding: 0px 10px 0px 10px;
+}
+#pic{
+	vertical-align: middle;
+	height: 275px;
+	width: 425px;
+}
+#story{
+	text-align: left;
+	vertical-align: middle;
+	width: 425px;
+	margin-left: 50px;
+}
+#coder-pic{
+	height: 275px;
+	width: 425px;
+}
+#story-title{
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+#story-summary{
+	font-size: 22px;
+	margin-bottom: 30px;
+}
+@media (max-width: 1100px){
+	#pic, #story{
+		display: block;
+		margin: 0px auto 0px auto;
+	}
+	#pic{
+		margin-bottom: 50px;
+		text-align: left;
+	}
+}
+@media (max-width: 565px){
+	#coder-pic{
+		width: 375px;
+		height: 225px;
+	}
+	#story-title{
+		font-size: 25px;
+		padding: 0px 10px 0px 5px;
+	}
+	#story-summary{
+		font-size: 15px;
+		padding: 0px 10px 0px 5px;
+	}
+	#pic{
+		margin-bottom: 15px;
+	}
+}
 input{
 	width: 300px;
 	height: 40px;

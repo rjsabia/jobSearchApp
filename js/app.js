@@ -50,6 +50,32 @@ function outputJobs (comp){
     // how to apply lists company instruction, url is link to Github job posting
     +comp.how_to_apply+'</p></li><li id="url"><a href="'+comp.url+'"target="_blank">'
     +"Link to Job Post and Description"+'</a></li></li></ul></li>');
+  // var compName = comp.company;
+  // companyReview(compName);
 }
+// var getComp = function(compName){
+//   var requestTwo = {
+//     v: 1,
+//     format: json,
+//     t.p: 118945,
+//     t.k: hWdRrtBjDJw,
+//     userip: 
+//     useragent:
+//     action: employers,
+//     q: compName
+//   };
+//   $.ajax({
+//     url: "http://api.glassdoor.com/api/api.htm?",
+//     data: request,
+//     dataType: "json",
+//     type: "GET"
+//   })
+//   .done(function(resultTwo){
+//     console.log(resultTwo);
+//     $.each(resultTwo, function(key,value){
+
+//     })
+//   })
+// }
 // **********END OF PROGRAM*********************************
 // *********************************************************
