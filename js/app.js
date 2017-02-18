@@ -46,7 +46,7 @@ function outputJobs (comp){
     +comp.type+'</li><li id="each-li">'+comp.title+'</li><li id="each-li">'
     // location outputs the city and or state job is located, created_at is date of post
     +comp.location+'</li><li id="each-li">'+'<p>'+"Job Posted On: "+comp.created_at+
-    '</li><li id="each-li">'+'<p>'+ "How to apply: "
+    '</li><li id="each-li">'+'<p id="how-to">'+ "How to apply: "
     // how to apply lists company instruction, url is link to Github job posting
     +comp.how_to_apply+'</p></li><li id="url"><a href="'+comp.url+'"target="_blank">'
     +"Link to Job Post and Description"+'</a></li></li></ul></li>');

@@ -29,7 +29,27 @@ header{
 #job-title{
 	margin: 0px 10px 0px 0px;
 }
-@media (max-width: 980px){
+button{
+	vertical-align: middle;
+	margin-left: 10px;
+	outline: none;
+}
+#search-button{
+	border-radius: 5px;
+	border: none;
+	width: 100px;
+	height: 40px;
+	background-color: black;
+	color: #00FF23;
+	font-size: 18px;
+}
+#search-button:hover{
+	background-color: #00FF23;
+	color: black;
+	font-weight: bold;
+	border: solid 3px black;
+}
+@media (max-width: 1090px){
 	#page-head{
 		font-size: 38px;
 		padding: 5px 0px 0px 5px;
@@ -46,19 +66,13 @@ header{
 		margin-top: 50px;
 	}
 }
-@media (max-width: 735px){
-	#job-title, #search-location, #search-button{
-		display: block;
-		margin: 20px auto 20px auto;
-	}
-}
-@media (max-width: 715px){
+@media (max-width: 770px){
 	#page-head{
-		font-size: 28px;
+		font-size: 30px;
 		height: 225px;
 	}
 	#hash-blinker{
-		font-size: 28px;
+		font-size: 30px;
 	}
 	#title h1{
 		padding-top: 35px;
@@ -68,13 +82,24 @@ header{
 		margin-top: 35px;
 	}	
 }
-@media (max-width: 535px){
-	#page-head{
+@media (max-width: 735px){
+	#job-title, #search-location, #search-button{
+		display: block;
+		margin: 20px auto 20px auto;
+	}
+	#search-button{
+		width: 150px;
+		height: 60px;
 		font-size: 22px;
+	}
+}
+@media (max-width: 600px){
+	#page-head{
+		font-size: 26px;
 		height: 165px;
 	}
 	#hash-blinker{
-		font-size: 22px;
+		font-size: 26px;
 	}
 	#title h1{
 		padding-top: 25px;
@@ -86,20 +111,11 @@ header{
 		padding-right: 5px;
 	}	
 }
-/*@media (max-width: 655px){
-	#search-button{
-		margin: 15px 0px 10px 0px;
+@media (max-width: 520px){
+	#hash-blinker{
+		font-size: 20px;
 	}
 }
-@media (max-width: 565px){
-	#job-title, #search-location{
-		margin: 15px 0px 10px 0px;
-	}
-	#search-button{
-		display: block;
-		margin: 5px 0px 15px 0px;
-	}
-}*/
 /*blink animation*/
 #blinky{
   animation: blinker 1.5s linear infinite;
@@ -113,7 +129,7 @@ header{
 	margin-top: 20px
 }
 /*hash blink animation*/
-#hash-blinker, #h1-blink{
+#hash-blinker, #h1-blink, #search-button:hover{
 	animation: blinker-hash .1s ease infinite;
 }
 @keyframes blinker-hash {  
@@ -155,33 +171,19 @@ input:focus {
     box-shadow: 0 0 10px #323d38;
     color: #00FF23;
 }
-/*gets rid of Chrome auto fill puke yellow color*/
+/*gets rid of Chrome auto fill puke yellow  BG color*/
 input:-webkit-autofill{
     -webkit-box-shadow: 0 0 0px 1000px #A1A1A1 inset;
 }
 /*fixes but versus input bar alignment issue*/
-button{
-	vertical-align: middle;
-}
-#search-button{
-	border-radius: 3px;
-	border: none;
-	width: 100px;
-	height: 40px;
-	background-color: black;
-	color: #00FF23;
-	font-size: 18px;
-}
-button{
-	margin-left: 10px;
-}
-#search-button:hover{
-	background-color: #00FF23;
-	color: black;
-}
 #output-list{
-	margin: 100px 100px 0px 100px;
+	margin: 100px 50px 0px 50px;
 	text-align: left;
+}
+@media (max-width: 975px){
+	#output-list{
+		margin: 50px 10px 0px 10px;
+	}
 }
 #results-ul{
 	margin-bottom: 110px;
@@ -191,7 +193,7 @@ button{
 	background-color: #ececec;
 }
 li #each-li{
-	margin: 8px 10px 8px 10px;
+	margin: 8px 0px 8px 0px;
 	font-family: 'Roboto Mono', monospace;
 	font-weight: bold;
 	font-size: 18px;
@@ -199,10 +201,28 @@ li #each-li{
 #img{
 	margin-bottom: 20px;
 }
+@media (max-width: 770px){
+	#img{
+		width: 320px;
+		height: 90px;
+	}
+}
+@media (max-width: 600px){
+	#img{
+		width: 300px;
+		height: 70px;
+	}
+}
+/*cuts potential long url for how to apply*/
+#how-to{
+	word-wrap: break-word;
+}
 #url{
 	margin-bottom: 35px;
-	margin: 8px 10px 8px 10px;
+	margin: 8px 0px 8px 0px;
 	font-family: 'Roboto Mono', monospace;
-	font-size: 18px;
+	font-size: 20px;
+}
+a {
 	color: #00FF23;
 }
