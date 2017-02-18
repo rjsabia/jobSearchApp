@@ -12,27 +12,81 @@ header{
 	font-family: 'Roboto Mono', monospace;
 	color: #00FF23;
 	background-color: black;
-	height: 400px;
+	height: 500px;
 	width: 100%;
 	font-size: 70px;
 	margin-bottom: 100px;
 }
 #title h1{
-	padding-top: 60px;
-
+	padding-top: 100px;
 }
-@media (max-width: 720px){
+#intro h3{
+	font-family: 'Roboto Mono', monospace;
+	font-size: 24px;
+	color: white;
+	margin-top: 100px;
+}
+#job-title{
+	margin: 0px 10px 0px 0px;
+}
+@media (max-width: 980px){
 	#page-head{
-		font-size: 35px;
+		font-size: 38px;
 		padding: 5px 0px 0px 5px;
-		height: 100px;
+		height: 275px;
+	}
+	#hash-blinker{
+		font-size: 38px;
 	}
 	#title h1{
-		margin-bottom: 5px;
-		padding-top: 15px;
+		padding-top: 50px;
+	}
+	#intro h3{
+		font-size: 16px;
+		margin-top: 50px;
 	}
 }
-@media (max-width: 655px){
+@media (max-width: 735px){
+	#job-title, #search-location, #search-button{
+		display: block;
+		margin: 20px auto 20px auto;
+	}
+}
+@media (max-width: 715px){
+	#page-head{
+		font-size: 28px;
+		height: 225px;
+	}
+	#hash-blinker{
+		font-size: 28px;
+	}
+	#title h1{
+		padding-top: 35px;
+	}
+	#intro h3{
+		font-size: 12px;
+		margin-top: 35px;
+	}	
+}
+@media (max-width: 535px){
+	#page-head{
+		font-size: 22px;
+		height: 165px;
+	}
+	#hash-blinker{
+		font-size: 22px;
+	}
+	#title h1{
+		padding-top: 25px;
+	}
+	#intro h3{
+		font-size: 12px;
+		margin-top: 25px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}	
+}
+/*@media (max-width: 655px){
 	#search-button{
 		margin: 15px 0px 10px 0px;
 	}
@@ -45,12 +99,7 @@ header{
 		display: block;
 		margin: 5px 0px 15px 0px;
 	}
-}
-@media (max-width: 440px){
-	#intro{
-		margin-bottom: 15px;
-	}
-}
+}*/
 /*blink animation*/
 #blinky{
   animation: blinker 1.5s linear infinite;
@@ -58,20 +107,13 @@ header{
 @keyframes blinker{  
   50% { opacity: 0; }
 }
-#intro h3{
-	font-family: 'Roboto Mono', monospace;
-	font-size: 22px;
-	color: white;
-	font-weight: bold;
-	margin-top: 80px;
-}
 #blink-hash{
 	color: #00FF23;
 	font-size: 55px;
 	margin-top: 20px
 }
 /*hash blink animation*/
-#hash-blinker{
+#hash-blinker, #h1-blink{
 	animation: blinker-hash .1s ease infinite;
 }
 @keyframes blinker-hash {  
@@ -136,9 +178,6 @@ button{
 #search-button:hover{
 	background-color: #00FF23;
 	color: black;
-}
-#job-title{
-	margin: 0px 10px 0px 0px;
 }
 #output-list{
 	margin: 100px 100px 0px 100px;
