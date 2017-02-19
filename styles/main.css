@@ -99,7 +99,7 @@ button{
 		height: 165px;
 	}
 	#hash-blinker{
-		font-size: 26px;
+		font-size: 22px;
 	}
 	#title h1{
 		padding-top: 25px;
@@ -111,9 +111,9 @@ button{
 		padding-right: 5px;
 	}	
 }
-@media (max-width: 520px){
+@media (max-width: 450px){
 	#hash-blinker{
-		font-size: 20px;
+		font-size: 18px;
 	}
 }
 /*blink animation*/
