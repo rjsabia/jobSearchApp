@@ -113,7 +113,16 @@ button{
 }
 @media (max-width: 450px){
 	#hash-blinker{
-		font-size: 18px;
+		font-size: 16px;
+	}
+	#page-head{
+		font-size: 22px;
+	}
+	#intro h3{
+		font-size: 11px;
+	}
+	#page-head{
+		margin-bottom: 50px;
 	}
 }
 /*blink animation*/
@@ -194,6 +203,22 @@ button{
 	}
 	#pic{
 		margin-bottom: 15px;
+	}
+}
+@media (max-width: 450px){
+	#coder-pic{
+		width: 350px;
+		height: 205px;
+	}
+	#story-title{
+		font-size: 22px;
+	}
+	#story-summary{
+		font-size: 12px;
+		max-width: 350px;
+	}
+	#explain{
+		margin-bottom: 50px; 
 	}
 }
 input{
