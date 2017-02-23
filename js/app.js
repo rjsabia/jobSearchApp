@@ -11,7 +11,7 @@ $(document).ready( function() {
     $('#job-title').val('');
     $('#search-location').val('');
     $('#output-list').empty();
-    console.log(jobSearch);
+    // console.log(jobSearch);
   });
 });
 var getJobs = function(job_title,loc) {
@@ -32,7 +32,7 @@ var getJobs = function(job_title,loc) {
     $.each(result, function(key,value){
     // output function call
     outputJobs(value);
-    console.log(value.company);
+    // console.log(value.company);
     })
  });
 }
@@ -50,8 +50,6 @@ function outputJobs (comp){
     // how to apply lists company instruction, url is link to Github job posting
     +comp.how_to_apply+'</p></li><li id="url"><a href="'+comp.url+'"target="_blank">'
     +"Link to Job Post and Description"+'</a></li></li></ul></li>');
-  // var compName = comp.company;
-  // companyReview(compName);
 }
 // **********END OF PROGRAM*********************************
 // *********************************************************

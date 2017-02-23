@@ -49,6 +49,7 @@ button{
 	font-weight: bold;
 	border: solid 3px black;
 }
+/*Respnsive adjustment for header*/
 @media (max-width: 1090px){
 	#page-head{
 		font-size: 48px;
@@ -82,6 +83,7 @@ button{
 		margin-top: 35px;
 	}	
 }
+/*Responsive adjustment for input and button*/
 @media (max-width: 755px){
 	#job-title, #search-location, #search-button{
 		display: block;
@@ -182,6 +184,7 @@ button{
 #story-summary{
 	font-size: 26px;
 }
+/*Respnosive Adjustment for story section*/
 @media (max-width: 1150px){
 	#pic, #story{
 		display: block;
@@ -231,6 +234,11 @@ button{
 @media (max-width: 725px){
 	#search-below{
 		height: 70px;
+	}
+}
+@media (max-width: 399px){
+	#search-below{
+		margin-bottom: 60px;
 	}
 }
 #start-search{
