@@ -123,6 +123,14 @@ button{
 		margin-bottom: 50px;
 	}
 }
+@media (max-width: 400px){
+	#hash-blinker{
+		font-size: 15px;
+	}
+	#page-head{
+		font-size: 25px;
+	}	
+}
 /*blink animation*/
 #blinky, #underscore-story{
   animation: blinker 1.5s linear infinite;
