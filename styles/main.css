@@ -123,9 +123,9 @@ button{
 		margin-bottom: 50px;
 	}
 }
-@media (max-width: 400px){
+@media (max-width: 401px){
 	#hash-blinker{
-		font-size: 15px;
+		font-size: 16px;
 	}
 	#page-head{
 		font-size: 25px;
