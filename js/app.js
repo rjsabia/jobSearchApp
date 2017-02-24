@@ -28,11 +28,16 @@ var getJobs = function(job_title,loc) {
   })
   //waits for the ajax to return a successful promise object
   .done(function(result){ 
-    console.log(result);
+    // console.log(result);
+    // console.log(result.length);
+    // test for results
+    if (result.length === 0){
+    noJobs();
+    }
     $.each(result, function(key,value){
-    // output function call
-    outputJobs(value);
-    // console.log(value.company);
+      // output function call
+      outputJobs(value);
+      // console.log(value.company);
     })
  });
 }
@@ -50,6 +55,12 @@ function outputJobs (comp){
     // how to apply lists company instruction, url is link to Github job posting
     +comp.how_to_apply+'</p></li><li id="url"><a href="'+comp.url+'"target="_blank">'
     +"Link to Job Post and Description"+'</a></li></li></ul></li>');
+}
+function noJobs (){
+  $('#output-list').append('<li><ul id="results-ul"><li id="each-li">'
+  +'<p id="sorry">'+"Sorry, looks like we couldn't find anything"+'</p>'
+  +'<li id="each-li"><p id="sorry">'+"Maybe try a different Job Title or Location"
+  +'</p></li></li></ul></li>');
 }
 // **********END OF PROGRAM*********************************
 // *********************************************************
