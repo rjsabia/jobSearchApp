@@ -23,10 +23,10 @@ header{
 a{
 	text-decoration: none !important;
 }
-#title h1:hover{
+#title:hover{
 	color: white;
 }
-#title a:visited{
+#title:visited{
 	color: #00FF23;
 }
 #intro h3{
@@ -166,12 +166,12 @@ button{
 	text-align: center;
 	font-family: 'Roboto Mono', monospace;
 	background-color: #d0dbe1;
-	padding: 10px 0px 10px 0px;
+	padding: 5px 0px 5px 0px;
 	width: 98%;
 }
 #pic, #story{
 	display: inline-block;
-	padding: 0px 10px 0px 10px;
+	padding: 0px 10px 5px 10px;
 }
 #pic{
 	vertical-align: middle;
@@ -202,6 +202,9 @@ button{
 		display: block;
 		margin: 0px auto 0px auto;
 	}
+	#story{
+		margin-bottom: 10px;
+	}
 	#pic{
 		margin-bottom: 65px;
 		text-align: left;
@@ -210,11 +213,12 @@ button{
 @media (max-width: 565px){
 	#coder-pic, #pic{
 		width: 98%;
-		height: 295px;
+		height: 300px;
 	}
 	#story{
 		width: 98%;
 		height: 185px;
+		margin-bottom: 10px;
 	}
 	#story-title{
 		font-size: 30px;
@@ -233,7 +237,7 @@ button{
 		height: 255px;
 	}
 	#story{
-		height: 255px;
+		height: 260px;
 	}
 	#explain{
 		margin-bottom: 40px; 

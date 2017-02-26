@@ -67,7 +67,7 @@ function noJobs (){
   +'</p></li></li></ul></li>');
 }
 function reset(){
-  $('.home').click(function(){
+  $('#title').click(function(){
     $('#job-title').val('');
     $('#search-location').val('');
     $('#output-list').empty();
