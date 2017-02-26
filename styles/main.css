@@ -15,10 +15,16 @@ header{
 	height: 500px;
 	width: 100%;
 	font-size: 75px;
-	margin-bottom: 100px;
+	margin-bottom: 60px;
 }
 #title h1{
 	padding-top: 100px;
+}
+a{
+	text-decoration: none !important;
+}
+a:hover{
+	color: yellow;
 }
 #intro h3{
 	font-family: 'Roboto Mono', monospace;
@@ -153,7 +159,7 @@ button{
   100% { opacity: 0.8; }
 }
 #explain{
-	margin: 0px auto 50px auto;
+	margin: 100px auto 50px auto;
 	text-align: center;
 	font-family: 'Roboto Mono', monospace;
 }

@@ -1,4 +1,6 @@
 $(document).ready( function() {
+  // set hero as refresh link
+  reset(); 
   // This grabs the submit for un-answered questions
   $('#input-form').submit( function(e){
     e.preventDefault();
@@ -11,6 +13,8 @@ $(document).ready( function() {
     $('#job-title').val('');
     $('#search-location').val('');
     $('#output-list').empty();
+    // Hides story explain
+    $('#explain').hide();
     // console.log(jobSearch);
   });
 });
@@ -61,6 +65,15 @@ function noJobs (){
   +'<p id="sorry">'+"Sorry, looks like we couldn't find anything"+'</p>'
   +'<li id="each-li"><p id="sorry">'+"Maybe try a different Job Title or Location"
   +'</p></li></li></ul></li>');
+}
+function reset(){
+  $('.home').click(function(){
+    $('#job-title').val('');
+    $('#search-location').val('');
+    $('#output-list').empty();
+    // shows story explain
+    $('#explain').show();
+  });
 }
 // **********END OF PROGRAM*********************************
 // *********************************************************
