@@ -159,7 +159,7 @@ button{
 	animation: blinker-hash .1s ease infinite;
 }
 @keyframes blinker-hash {  
-  100% { opacity: 0.8; }
+    100% { opacity: 0.8; }
 }
 #explain{
 	margin: 100px auto 50px auto;
@@ -196,7 +196,7 @@ button{
 #story-summary{
 	font-size: 26px;
 }
-/*Respnosive Adjustment for story section*/
+/*Responsive Adjustment for story section*/
 @media (max-width: 1150px){
 	#pic, #story{
 		display: block;
@@ -274,7 +274,7 @@ input{
 	font-family: 'Roboto Mono', monospace;
 	font-size: 18px;
 }
-/*how to adjust placeholder imput font and color*/
+/*adjust placeholder input font and color*/
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #00FF23;
   font-size: 15px;
@@ -291,7 +291,6 @@ input{
   color: #00FF23;
   font-size: 15px;
 }
-/*change color when input box is clicked*/
 input:focus {
     outline: none !important;
     border: 1px solid #00FF23;
@@ -346,7 +345,6 @@ li #each-li{
 	font-weight: bold;
 	margin-bottom: 15px;
 }
-/*cuts potential long url for how to apply*/
 #how-to{
 	word-wrap: break-word;
 }

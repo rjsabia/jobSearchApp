@@ -7,7 +7,7 @@ $(document).ready( function() {
     // get the value of the tags the user submitted
     var jobSearch = $('#job-title').val();
     var location = $('#search-location').val();
-    //function call below
+    //function call for Github API
     getJobs(jobSearch,location);
     // clears out input bar and output after search is run
     $('#job-title').val('');
@@ -15,14 +15,12 @@ $(document).ready( function() {
     $('#output-list').empty();
     // Hides story explain
     $('#explain').hide();
-    // console.log(jobSearch);
   });
 });
 var getJobs = function(job_title,loc) {
   var request = { 
     description: job_title,
     location: loc,
-    markdown: true
   };
   $.ajax({
     url: "https://jobs.github.com/positions.json?",
@@ -32,8 +30,6 @@ var getJobs = function(job_title,loc) {
   })
   //waits for the ajax to return a successful promise object
   .done(function(result){ 
-    // console.log(result);
-    // console.log(result.length);
     // test for results
     if (result.length === 0){
     noJobs();
@@ -76,4 +72,3 @@ function reset(){
   });
 }
 // **********END OF PROGRAM*********************************
-// *********************************************************
