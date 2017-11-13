@@ -13,7 +13,7 @@ Bit Target Jobs comes into play.
 
 
 
-Why Not just use those other sites to search?
+Why not just use those other sites to search?
 ---------------------------------------------
 
 Whether you are looking for your first developer job
