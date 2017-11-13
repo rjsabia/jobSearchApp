@@ -13,8 +13,8 @@ Bit Target Jobs comes into play.
 
 
 
-Why Not just use the those sites to search?
---------------------------------------------
+Why Not just use those other sites to search?
+---------------------------------------------
 
 Whether you are looking for your first developer job
 or trying to advance your career, the last thing you want
@@ -80,6 +80,7 @@ user functionality. Future plans include:
 - adding the Stack Overflow Jobs RSS feed
 - intergrating the Glassdoor API with company reviews
 - adding more content to the home page
+<<<<<<< HEAD
 - adding more page links with useful job search data 
 
 Want to get in touch, share your thoughts, or collaborate?
@@ -87,3 +88,6 @@ Want to get in touch, share your thoughts, or collaborate?
 
 Jump to my portfolio site and head to the Contact me section: [russellsabia.com](http://russellsabia.com) 
 
+=======
+- adding more page links with useful job search data  
+>>>>>>> master
