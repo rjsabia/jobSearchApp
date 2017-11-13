@@ -68,4 +68,3 @@ user functionality. Future plans include:
 - intergrating the Glassdoor API with company reviews
 - adding more content to the home page
 - adding more page links with useful job search data  
-
