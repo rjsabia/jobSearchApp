@@ -80,7 +80,6 @@ user functionality. Future plans include:
 - adding the Stack Overflow Jobs RSS feed
 - intergrating the Glassdoor API with company reviews
 - adding more content to the home page
-<<<<<<< HEAD
 - adding more page links with useful job search data 
 
 Want to get in touch, share your thoughts, or collaborate?
@@ -88,6 +87,3 @@ Want to get in touch, share your thoughts, or collaborate?
 
 Jump to my portfolio site and head to the Contact me section: [russellsabia.com](http://russellsabia.com) 
 
-=======
-- adding more page links with useful job search data  
->>>>>>> master
